@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.app {
+  padding: 20px 20px;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  background-color: $background-color;
+}
+
+.canvasWrapper {
+  height: 100%;
+}

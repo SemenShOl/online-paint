@@ -1,0 +1,84 @@
+@import "./variables.scss";
+.toolbar {
+  height: $toolbar-height;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: 2px solid teal;
+
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-size: cover;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .color {
+    border: 0;
+  }
+  .brush {
+    background: url("../assets/img/brush.png") no-repeat center center;
+  }
+
+  .circle {
+    background: url("../assets/img/circle.png") no-repeat center center;
+  }
+
+  .eraser {
+    background: url("../assets/img/eraser.png") no-repeat center center;
+  }
+
+  .line {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 23px;
+    background-color: white;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 3px;
+      height: 23px;
+      background-color: black;
+    }
+  }
+
+  .rect {
+    background: url("../assets/img/rect.png") no-repeat center center;
+  }
+
+  .undo {
+    margin-left: auto;
+    background: url("../assets/img/undo.png") no-repeat center center;
+  }
+  .redo {
+    background: url("../assets/img/redo.png") no-repeat center center;
+  }
+
+  .save {
+    background: url("../assets/img/save.png") no-repeat center center;
+  }
+}
+
+.settingsbar {
+  // position: absolute;
+  border-radius: 10px;
+  padding: 2px 10px;
+  border: 2px solid teal;
+
+  height: $toolbar-height;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  // top: 55px;
+}
